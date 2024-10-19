@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriela Reyna Profile</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <!-- Reproductor de audio con control oculto, asegúrate de que esto sea accesible o fácil de pausar -->
+    <audio src="./assets/lindo.mp3" autoplay aria-label="Audio de bienvenida" hidden></audio>
+
+    <header>
+        <img src="./assets/kuromi.png" alt="Imagen de Kuromi">
+    </header>
+
+    <main>
+        <h1 class="presentacion__contenido__titulo">Gabriela Reyna</h1>
+
+        <section>
+            <div>
+                   <a class="link__redessociales" href="https://www.instagram.com/reynagabrielaa/" aria-label="Instagram de Gabriela Reyna">
+                        <img src="./assets/instagram.png" alt="Logo de Instagram" width="32" height="32"> Instagram
+                    </a>
+                    <a class="link__redessociales" href="https://github.com/GabyReynaa" aria-label="Github de Gabriela Reyna">
+                        <img src="./assets/github.png" alt="Logo de Github" width="32" height="32"> Github
+                    </a>
+                    <a class="link__redessociales" href="https://www.linkedin.com/in/gabriela-reyna-" aria-label="Linkedin de Gabriela Reyna">
+                        <img src="./assets/linkedin.png" alt="Logo de Linkedin" width="32" height="32"> Linkedin
+                    </a>
+                    <button class="btn__contacto"><a href="#contacto">Contacto</a></button>
+                
+            </div>
+        </section>
+
+        <div>
+            <a class="link__contenido" href="aboutme.html" aria-label="Página sobre mí">Sobre mí
+                <img src="./assets/flecha.png" alt="Flecha hacia derecha" width="32" height="32">
+            </a>
+            <a class="link__proyectos" href="#proyectos" aria-label="Sección de proyectos">Proyectos
+                <img src="./assets/flecha.png" alt="Flecha hacia derecha" width="32" height="32">
+            </a>
+        </div>
+    </main>
+
+    <section id="proyectos" class="section1">
+        <div class="contenedor__proyectos">
+            <h3 class="Proyectos">Proyectos web</h3>
+            <h4>Skills</h4>
+                  <!-- Aquí agregas los iconos de sistemas/tecnologías -->
+        <div class="iconos__tecnologias">
+            <img src="https://img.icons8.com/?size=100&id=23028&format=png&color=22C3E6" alt="HTML5" width="40" height="40">
+            <img src="https://img.icons8.com/?size=100&id=38272&format=png&color=22C3E6" alt="CSS3" width="40" height="40">
+            <img src="https://img.icons8.com/?size=100&id=39854&format=png&color=22C3E6" alt="JavaScript" width="40" height="40">
+            
+        </div>
+        </div> 
+        <div class="grid-container">
+            <div class="grid-item large-card">
+                <img src="./assets/5a7c3833d098e3e257bd8f2caf9d3f47.jpg" class="card_imgencriptador" alt="Imagen del Abecedario con luces">
+                <div class="overlay">
+                    <a href="https://encriptador-de-texto-roan-alpha.vercel.app/" target="_blank">
+                        <button class="btn">Ver proyecto</button>
+                    </a>
+                </div>
+                <h5>Encriptador de texto</h5>
+            </div>
+
+            <div class="grid-item small-card">
+                <img src="./assets/ia.png" class="card_imgencriptador" alt="Mujer de perfil">
+                <div class="overlay">
+                    <a href="https://github.com/GabyReynaa/secret-number-game.git" target="_blank">
+                        <button class="btn">Ver proyecto</button>
+                    </a>
+                </div>
+                <h5>Secret number game</h5>
+            </div>
+
+            <div class="grid-item large-card">
+                <img src="./assets/MEITU_20240904_125503709.jpg" class="card_imgencriptador" alt="Imagen de Gabriela">
+                <div class="overlay">
+                    <a href="https://gabyreynaa.github.io/portafolio/" target="_blank">
+                        <button class="btn">Ver proyecto</button>
+                    </a>
+                </div>
+                <h5>Perfil actriz</h5>
+            </div>
+        </div>
+               
+        
+    </section>
+   
+   <section id="contacto" class="contact-section">
+        <div class="background-image"></div>
+        <div class="contact-form">
+            <h2>Contacto</h2>
+            <p><a href="mailto:lobolurant.keep@gmail.com">lobolunart.keep@gmail.com</a></p>
+            <button onclick="window.location.href='mailto:lobolunart.keep@gmail.com'">Send an Email</button>
+        </div>
+    </section>
+   
+ <footer class="footer">
+        <p>Desarrollado por Gabriela Reyna</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cedarville+Cursive&family=DotGothic16&display=swap');
+
+:root{
+   --color-primario: black ;
+   --color-secundario: #e09898; 
+   --color-terciario:#b83762; 
+
+   --fuente-DotGothic: "DotGothic16", sans-serif;
+   --fuente-Coda: "Coda", system ui;
+
+
+}
+* {
+    padding: 0;
+    margin:  0;
+    cursor:url(https://cur.cursors-4u.net/cursors/cur-3/cur211.ani), url(https://cur.cursors-4u.net/cursors/cur-3/cur211.png), auto !important;
+   } 
+
+
+
+body {
+    margin-top: 20px; 
+    background-image: url('/assets/Founders\'\ Podcast.png');
+    color: #e09898;
+    box-sizing: border-box;
+   
+    
+}
+
+
+.header{
+ padding: 2% 0% 0% 15%;
+
+}
+
+
+ .presentacion__contenido__titulo {
+    font-size: 6rem ;
+    font-family: var(--fuente-DotGothic);
+    font-weight: 400;
+    font-style: normal;
+    color: #fde3ee;
+    text-shadow: #0000;
+    text-decoration-style: solid;
+    width: 80%;
+    margin: 20px;
+    gap: 82px;
+    
+ }
+
+
+ .presentacion__enlaces {
+    display:flex;
+    justify-content: flex-start;
+    flex-direction:row;
+    margin-left: 10%;
+    gap: 35px;  
+    
+ }
+
+ .link__redessociales {
+    width: 35%;
+    height: 40px;
+    align-items: center;
+    background-color:  #fde3ee3a;
+    text-align: center;
+    padding: 60 0;
+    font-family: var(--fuente-Coda);
+    font-size: 1.7rem;
+    font-weight: 800;
+    font-style: normal;
+    color: var(--color-primario);
+    text-decoration: none;
+    border: 2px solid #b83762;
+    border-style: outset;
+    box-shadow: #0000000c;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-left:20px;
+    margin-top: 54px;
+ }
+
+ .link__redessociales:hover{
+   background-color:aliceblue;
+   color:#b83762
+ }
+
+ .link__contenido{
+   position:absolute;
+   top: 350px;
+   left: 800px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items:center;
+   gap: 30px;
+   width: 35%;
+   height: 40px;
+   background-color:  #fde3ee3a;
+   padding: 60 0;
+   font-family: var(--fuente-Coda);
+   font-size: 1.6rem;
+   font-weight: 800;
+   text-align: center;
+   font-style: normal;
+   color: var(--color-primario);
+   text-decoration: none;
+   border: 2px solid #b83762;
+   border-style: outset;
+   box-shadow: #0000000c;
+   }
+
+.link__contenido:hover{
+   background-color: aliceblue;
+   color: #b83762;
+}
+
+.link__proyectos{
+   position: absolute;
+   top: 450px;
+   left: 800px;
+   display: flex;
+   flex-direction: row;
+   justify-content:center;
+   align-items: center;
+   gap:30px;
+   width: 35%;
+   height: 40px;
+   background-color:  #fde3ee3a;
+   padding: 60 0;
+   font-family: var(--fuente-Coda);
+   font-size: 1.6rem;
+   font-weight: 800;
+   text-align: center;
+   font-style: normal;
+   color: var(--color-primario);
+   text-decoration: none;
+   border: 2px solid #b83762;
+   border-style: outset;
+   box-shadow: #0000000c;
+}
+
+.link__proyectos:hover{
+   background-color: aliceblue;
+   color: #b83762;
+}
+
+h2{
+   margin-top: 90px;
+   color: #000;
+ 
+   
+}
+
+.btn__contacto{
+   margin-top: 100px;
+   background-color:#b837624d;
+   color: #060607;
+   border-radius: 20px;
+   padding: 10px 20px;
+   cursor: pointer;
+   font-size: 16px;
+   font-family:var(--fuente-Coda);
+   
+   
+}
+
+.btn__contacto:hover{
+   background-color: #0f0b13;
+}
+
+/*   Seccion de proyectos   */
+
+
+.section1{
+   background-color:black ;
+   background-size: auto;
+   margin-top: 10%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   
+   
+}
+.contenedor-proyectos{
+   display: flex;
+   width:30%;
+   flex-direction: column;
+   padding: 20px;
+}
+.Proyectos {
+   color: aqua;
+   font-family: var(--fuente-Coda);
+   font-size: 2.6rem;
+   font-weight: 800;
+   text-align: left;
+   font-style: normal;  
+ }
+
+ h4{
+   font-family: var(--fuente-DotGothic);
+   font-size: larger;
+   margin-top: 30px;
+ }
+ 
+.grid-container {
+   display: grid;
+   grid-template-columns: 1fr 1fr 2fr; /* Tres columnas: las dos primeras más pequeñas, la tercera más grande */
+   grid-gap: 10px;
+   align-items: stretch;
+   width: 65%; /* El grid ocupa el 65% del ancho */
+   margin-top: 300px; /* Alineado con el texto */
+}
+
+.grid-item {
+   background-color: #000000;
+   padding: 10px;
+   position: relative;
+   text-align: center;
+}
+
+.large-card img, .small-card img {
+   width: 100%;
+   height: auto;
+   opacity: 0.5; /* Imagen opaca por defecto */
+   transition: opacity 0.3s ease;
+}
+
+.grid-item:hover img {
+   opacity: 1; /* Al pasar el ratón, la imagen se muestra normalmente */
+}
+
+.large-card {
+   grid-column: span 2; /* Ocupa más columnas para las tarjetas grandes */
+}
+
+.overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   opacity: 0;
+   transition: opacity 0.3s ease;
+}
+
+.grid-item:hover .overlay {
+   opacity: 1; /* Muestra el botón al pasar el ratón */
+}
+
+.btn {
+   background-color: #fff;
+   color: #000;
+   border: none;
+   padding: 10px 20px;
+   cursor: pointer;
+   font-size: 16px;
+}
+
+.btn:hover {
+   background-color: #ddd;
+}
+
+h5 {
+   margin-top: 10px;
+   font-size: 16px;
+   color: aqua;
+   
+}
+
+/* Sección de contacto */
+
+.contact-section {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh; /* Ajusta el alto según lo necesites */
+
+}
+
+.background-image {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image: url('/assets/Founders\'\ Podcast2.png'); /* Coloca la URL de tu imagen */
+   background-size: cover;
+   background-position: center;
+   z-index: 1;
+}
+
+.contact-form {
+   position: relative;
+   background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+   padding: 20px;
+   max-width: 400px;
+   text-align: center;
+   z-index: 2;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para el recuadro */
+}
+
+.contact-form h2 {
+   margin-bottom: 10px;
+   font-size: 24px;
+   color: #333;
+}
+
+.contact-form p {
+   margin-bottom: 15px;
+   color: #555;
+}
+
+.contact-form a {
+   color: #555;
+   text-decoration: none;
+}
+
+.contact-form button {
+   padding: 10px 20px;
+   background-color: #333;
+   color: #fff;
+   border: none;
+   cursor: pointer;
+   transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+   background-color: #555;
+}
+
+ .footer{
+   background-color: #282728cb;
+   padding: 8px;
+   color: azure;
+   text-align: center;
+   font-family: "Bettie";
+   font-size: medium;
+   font-weight: 500;
+ }
+ @media (max-width: 1400px) {
+   .header {
+       padding: 5%; /* Reducimos el padding para pantallas más pequeñas */
+   }
+
+   .presentacion__contenido__titulo {
+       flex-direction: column;
+       justify-content: center;
+       font-size: 40px; /* Disminuir el tamaño de fuente para pantallas medianas */
+       width: auto;
+       text-align: center; /* Centramos el texto */
+   }
+
+   .link__redessociales {
+      justify-content:center;
+      align-items: center;
+      font-size: 20px; /* Reducimos el tamaño para mejor ajuste */
+      width: 90%;
+      text-align: center;
+      margin: auto;
+      margin-bottom: 10px; /* Añadimos un margen inferior para separar los enlaces */
+   }
+
+   .link__contenido, .link__proyectos {
+       position:initial;
+       margin: auto;
+       margin-left:26px; /* Eliminamos márgenes fijos */
+       margin-top: 10px; 
+       margin-bottom: 5px;
+       font-size: 20px; /* Reducimos el tamaño de fuente */
+       justify-content: center;
+       align-items: center;
+       width: 90%; /* Cambiamos a porcentaje para mejor ajuste en pantallas más pequeñas */
+       text-align:left; 
+       
+   }
+ 
+}
+
+@media (max-width: 800px) {
+   /* Alineación general de las redes sociales */
+   .link__redessociales, .link__contenido, .link__proyectos {
+     display: flex;
+     justify-content: center; /* Alineamos el contenido al centro horizontal */
+     align-items: center; /* Alineamos verticalmente los elementos */
+     font-size: 14px; /* Ajustamos el tamaño del texto */
+     width: 80%; /* El enlace ocupa un 80% del contenedor */
+     margin: 0 auto; /* Centramos el contenedor de los enlaces */
+     text-align: center; /* Centramos el texto dentro de los enlaces */
+     margin-left: 20px;
+   }
+ 
+   /* Espaciado uniforme entre los enlaces */
+   .link__contenido, .link__proyectos {
+     margin-top: 2px; /* Añadimos margen superior para separarlos */
+   
+   }
+ 
+   /* Alineación vertical en una columna para pantallas más pequeñas */
+   .link__redessociales {
+     flex-direction: row; /* Aseguramos que las redes se alineen en fila */
+   }
+
+   .btn__contacto {
+      margin-top: 20px; /* Reducir el margen superior */
+      margin-bottom: 20px;
+      padding: 10px 15px; /* Ajustar el padding */
+      font-size: 1.2rem; /* Aumentar el tamaño de la fuente ligeramente para pantallas pequeñas */
+      width: 80%; /* Hacer el botón más ancho en relación con el contenedor */
+      text-align: center; /* Asegurar que el texto esté centrado */
+      margin-left: 20px;
+      margin-right: 20px;
+     
+   }
+
+   .Proyectos{
+      margin-top: 100px;
+      margin-left: 30px;
+      text-align: center;
+      font-family: var(--fuente-DotGothic);
+      font-size: 40px;
+   }
+   .grid-container {
+      grid-template-columns: 1fr; /* Cambiar a una columna en pantallas pequeñas */
+      width: 100%; /* Asegurarse de que ocupe todo el ancho disponible */
+      margin-top: 50px; /* Reducir el margen superior */
+   }
+
+   .grid-item {
+      padding: 20px; /* Aumentar ligeramente el padding para que el contenido no se sienta comprimido */
+   }
+
+   .large-card {
+      grid-column: span 1; /* Asegurarse de que todas las tarjetas ocupen solo una columna en pantallas pequeñas */
+   }
+
+   .btn {
+      font-size: 1.2rem; /* Ajustar el tamaño de los botones dentro de los proyectos */
+      padding: 8px 16px; /* Cambiar el padding para que los botones se vean mejor */
+   }
+
+   h5 {
+      font-size: 1.4rem; /* Hacer los títulos más legibles en pantallas pequeñas */
+   }
+ }
+ 

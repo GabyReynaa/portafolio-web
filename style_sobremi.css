@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cedarville+Cursive&family=DotGothic16&display=swap');
+
+:root{
+   --color-primario: black ;
+   --color-secundario: #e09898; 
+   --color-terciario:#b83762; 
+
+   --fuente-DotGothic: "DotGothic16", sans-serif;
+   --fuente-Coda: "Coda", system ui;
+
+}
+* {
+    padding: 0;
+    margin:  0;
+    cursor:url(https://cur.cursors-4u.net/cursors/cur-3/cur211.ani), url(https://cur.cursors-4u.net/cursors/cur-3/cur211.png), auto !important;
+}
+body {
+    
+   background-color: var(--color-primario);
+   color: var(--color-secundario);
+    box-sizing: border-box;
+}
+
+
+.header{
+ padding: 2% 0% 0% 15%;
+
+}
+
+
+.header__menu{
+   display: flex;
+   gap: 80px;
+
+}
+
+
+.header__menu__link{
+   font-family: var(--fuente-DotGothic);
+   font-size: 1.5rem;
+   font-weight: 600;
+   text-decoration: none;
+   color:var(--color-terciario);
+}
+
+.header__menu__link:hover{
+   font-size: 2.2rem;
+   font-family: var(--fuente-Coda);
+   color: blanchedalmond;
+}
+.presentacion {
+   display: flex;
+   align-items:center; /* Centra el contenido verticalmente */
+   height: 100vh; /* Altura total de la pantalla */ 
+}
+
+.presentacion img {
+   margin-left: auto;
+   width: 55%; /* La imagen ocupará el 50% del ancho */
+   object-fit: cover;/* Ajusta la imagen para que cubra su contenedor sin distorsionarse */
+   height:90%; /* Ocupa toda la altura */
+   position: relative;
+   z-index: 1;
+}
+
+.presentacion__contenido__titulo{
+font-family: var(--fuente-DotGothic);
+font-weight: 400;
+font-style: normal;
+color: #fde3ee;
+text-shadow: #0000;
+text-decoration-style: solid;
+
+}
+.presentacion__contenido__texto{
+font-family:var(--fuente-Coda);
+font-size: 30px;
+text-shadow: #23dfcf;
+align-items: normal;
+text-align: left; /* Centra el texto */
+position: absolute; /* Esto permite que el contenido flote sobre la imagen */
+top: 30%; /* Posiciona el texto en el centro verticalmente */
+left: 10%; /* Posiciona el texto en el centro horizontalmente */
+width: 45%; /* Ajusta el ancho del texto si es necesario */
+z-index: 2;
+background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente opcional para mejorar la legibilidad */
+
+}
+
+.footer{
+   font-family: 'Times New Roman', Times, serif;
+   font-size: smaller;
+   color: #e9d3d3;
+}
+@media (max-width: 800px) {
+   .header {
+      padding: 5% 0% 0% 10%; /* Ajustar el padding para dispositivos pequeños */
+   }
+
+   .header__menu {
+      flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+      gap: 30px; /* Reducir el espacio entre los enlaces */
+      align-items: center; /* Centrar los enlaces en la columna */
+   }
+
+   .header__menu__link {
+      font-size: 1.2 rem; /* Reducir el tamaño de la fuente para pantallas más pequeñas */
+   }
+
+   .presentacion {
+      flex-direction: column; /* Cambiar la dirección a columna para que el contenido y la imagen estén uno encima del otro */
+      height: auto; /* Permitir que la altura se ajuste automáticamente */
+   
+   }
+
+   .presentacion img {
+      width: 100%; /* Hacer que la imagen ocupe todo el ancho de la pantalla */
+      height: auto; /* Ajustar la altura de la imagen automáticamente */
+      margin-left: 0; /* Eliminar el margen izquierdo */
+   }
+
+   .presentacion__contenido__titulo {
+      margin-top: 30px;
+      margin-bottom: 20px;
+      font-size: 1.5rem; /* Ajustar el tamaño del título para pantallas pequeñas */
+      text-align: left; /* Centrar el texto del título */
+   }
+
+   .presentacion__contenido__texto {
+      font-size: 1rem; /* Reducir el tamaño del texto para pantallas pequeñas */
+      left: 5%; /* Ajustar el posicionamiento del texto */
+      top: 30%; /* Cambiar la posición superior */
+      width: 40%; /* Aumentar el ancho del texto */
+      padding: 20px; /* Agregar un poco de padding al contenedor de texto */
+      text-align: inherit;
+      color: #ffa0d8;
+      accent-color: white;
+      flood-color: aquamarine;
+      text-shadow: #fde3ee;
+      font-weight: bold;
+   
+
+   }
+}
